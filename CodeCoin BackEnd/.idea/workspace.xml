@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb2629c7-b198-4d04-8299-a43598284fe6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodeCoin FrontEnd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeCoin FrontEnd/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodeCoin FrontEnd/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeCoin FrontEnd/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodeCoin FrontEnd/src/components/authorization.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeCoin FrontEnd/src/components/authorization.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodeCoin FrontEnd/src/components/checkfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeCoin FrontEnd/src/components/checkfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodeCoin FrontEnd/src/components/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeCoin FrontEnd/src/components/navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodeCoin FrontEnd/src/components/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeCoin FrontEnd/src/components/table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodeCoin FrontEnd/src/components/tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeCoin FrontEnd/src/components/tabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodeCoin FrontEnd/src/components/uploadFile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeCoin FrontEnd/src/components/uploadFile.js" afterDir="false" />
-    </list>
+    <list default="true" id="cb2629c7-b198-4d04-8299-a43598284fe6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />

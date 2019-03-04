@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="353746e3-04d9-4341-b1ba-34810da57f01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../CodeCoin BackEnd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeCoin BackEnd/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/authorization.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/authorization.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/checkfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/uploadFile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/uploadFile.js" afterDir="false" />
-    </list>
+    <list default="true" id="353746e3-04d9-4341-b1ba-34810da57f01" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -274,12 +264,12 @@
       <updated>1550933812635</updated>
       <workItem from="1550933813976" duration="81230000" />
       <workItem from="1551698148866" duration="600000" />
-      <workItem from="1551707008447" duration="3126000" />
+      <workItem from="1551707008447" duration="3252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84956000" />
+    <option name="totallyTimeSpent" value="85082000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
