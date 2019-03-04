@@ -17,6 +17,27 @@ class Authorization extends React.Component{
         }
     }
 
+    handleState(fieldName, value){
+        switch(fieldName) {
+            case 'login':
+                if (value.length > 6){
+                    this.setState({login: value})
+                } else {
+                    this.setState({login: ""})
+                }
+                break;
+            case 'password':
+                if (value.length > 6){
+                    this.setState({password: value})
+                }  else {
+                    this.setState({password: ""})
+                }
+                break;
+            default:
+                break;
+        }
+    }
+
     render(){
         return(
             <MuiThemeProvider >
@@ -27,7 +48,7 @@ class Authorization extends React.Component{
                                 hintText="Введите свой логин"
                                 floatingLabelText="Логин"
                                 name="login"
-                                onChange = {(event,newValue) => this.setState({login:newValue})}
+                                onChange = {(event,newValue) => this.handleState("login",newValue)}
                             />
                             <br/>
                             <TextField
@@ -35,7 +56,7 @@ class Authorization extends React.Component{
                                 hintText="Введите свой пароль"
                                 floatingLabelText="Пароль"
                                 name="password"
-                                onChange = {(event,newValue) => this.setState({password:newValue})}
+                                onChange = {(event,newValue) => this.handleState("password",newValue)}
                             />
                             <br/>
                             <br/>

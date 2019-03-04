@@ -38,7 +38,7 @@ class App extends React.Component {
     }
 
     updateChain = async () => {
-        // event.preventDefault()
+        //event.preventDefault()
         const myHeaders = new Headers({
             'Content-Type': 'Access-Control-Allow-Headers',
         });
@@ -48,7 +48,7 @@ class App extends React.Component {
             cache: 'default' };
         const url = await fetch("http://localhost:5000/events/blockchain/update", params);
         const data = await url.json();
-        console.log(data);
+        console.log(data)
     }
 
     getBalance = async (event) => {
@@ -60,55 +60,62 @@ class App extends React.Component {
 
     getAuthorized = async (event, login, password) => {
         event.preventDefault()
-
-        fetch('http://localhost:5000/auth',{
-            method: "POST",
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
-            },
-            body:  JSON.stringify({
-                login: login,
-                password: password,
-            }),
-        })
-            .then(r=> r.text())
-            .then(x => {
-                if (x !== "Пользователь не существует"){
-                    localStorage.setItem('token', x)
-                    localStorage.setItem('login', login)
-                    this.handleClickVariant('Вы авторизированы!', 'success')
-                    this.toggleCase()
-                } else {
-                    this.handleClickVariant('Введен не правильный логин или пароль!', 'error')
-                }
-            });
+        if (login !== "" && password!=="") {
+            fetch('http://localhost:5000/auth', {
+                method: "POST",
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    login: login,
+                    password: password,
+                }),
+            })
+                .then(r => r.text())
+                .then(x => {
+                    if (x !== "Пользователь не существует") {
+                        localStorage.setItem('token', x)
+                        localStorage.setItem('login', login)
+                        this.handleClickVariant('Вы авторизированы!', 'success')
+                        this.toggleCase()
+                    } else {
+                        this.handleClickVariant('Введен не правильный логин или пароль!', 'error')
+                    }
+                });
+        } else {
+            this.handleClick(`Некорректные данные для входа`);
+        }
      }
 
     registration = async (event, login, password) => {
         event.preventDefault()
+        if (login !== "" && password!==""){
+            fetch('http://localhost:5000/registration',{
+                method: "POST",
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                body:  JSON.stringify({
+                    login: login,
+                    password: password,
+                }),
+            })
+                .then(r=> r.text())
+                .then(x => {
+                    console.log(x)
+                    if (x !== "Пользователь уже зарегистророван!"){
+                        this.mine();
+                        this.handleClick(`Вы зарегистированы, ${login}!`);
+                    } else {
+                        this.handleClick(`Такой пользователь уже зарегистрирован!`);
+                    }
+                });
+        }else{
+            this.handleClick(`Некорректные данные для регистрации`);
+        }
 
-        fetch('http://localhost:5000/registration',{
-            method: "POST",
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
-            },
-            body:  JSON.stringify({
-                login: login,
-                password: password,
-            }),
-        })
-            .then(r=> r.text())
-            .then(x => {
-                console.log(x)
-                if (x !== "Пользователь уже зарегистророван!"){
-                    this.mine();
-                    this.handleClick(`Вы зарегистированы, ${login}!`);
-                } else {
-                    this.handleClick(`Такой пользователь уже зарегистрирован!`);
-                }
-            });
         // this.mine();
     }
 
@@ -195,8 +202,13 @@ class App extends React.Component {
         this.props.enqueueSnackbar(message, { variant });
     };
 
+    updated = true;
+
     render(){
-        this.updateChain()
+        if (this.updated){
+            this.updateChain()
+            this.updated = false;
+        }
       return (
         <div>
             <Navbar/>

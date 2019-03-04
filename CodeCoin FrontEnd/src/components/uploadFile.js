@@ -1,7 +1,5 @@
 import React from 'react';
 import FileBase64 from 'react-file-base64';
-import Button from '@material-ui/core/Button';
-import ButtonBase from '@material-ui/core/ButtonBase';
 
 const SHA256 = require("crypto-js/sha256");
 

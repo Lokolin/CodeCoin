@@ -62,7 +62,7 @@ class NavTabs extends React.Component {
                         </Tabs>
                     </AppBar>
                     {value === 0 && <TabContainer>
-                        <Grid container spacing={50}>
+                        <Grid container spacing={0}>
                             <Grid item xs={2}>
                                 <Balance method={event => this.props.balance(event)}/>
                             </Grid>
@@ -82,7 +82,7 @@ class NavTabs extends React.Component {
                     </TabContainer>}
                     {value === 1 && <TabContainer>
                         <CheckFile method={event => this.props.checkDeal(event)}/>
-                        <Grid container spacing={50}>
+                        <Grid container spacing={0}>
                             <Grid item xs={5}> </Grid>
                             <Grid item xs={2}>
                                 Получить хеш-сумму от файла

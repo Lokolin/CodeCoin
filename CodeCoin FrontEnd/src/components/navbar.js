@@ -22,7 +22,7 @@ const styles = {
 };
 
 function logout() {
-    localStorage.clear()
+    localStorage.removeItem("login")
 }
 
 function Navbar(props) {

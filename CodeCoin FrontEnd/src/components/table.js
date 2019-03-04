@@ -32,8 +32,6 @@ function getChain(){
 function SimpleTable(props) {
     const { classes } = props;
     const bchain = getChain();
-    console.log(bchain);
-
     return (
         <Paper className={classes.root}>
             <Table className={classes.table}>
