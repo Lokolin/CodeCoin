@@ -84,7 +84,7 @@ class Blockchain {
       let block = new Block(Date.now(), this.pendingTransactions, this.getLatestBlock().hash);
       block.mineBlock(this.difficulty);
 
-      console.log('Block successfully mined!');
+      console.log('Блок успешно смайнен');
       this.chain.push(block);
 
       this.pendingTransactions = [
@@ -101,12 +101,12 @@ class Blockchain {
       for(const block of this.chain){
           for(const trans of block.transactions){
               if(trans.hash === hash ){
-                  return "User already exist"
+                  return "Пользователь уже зарегистророван!"
               }
           }
       }
       this.pendingTransactions.push(new Account(hash))
-      return "User have been registrate. Transaction added to pending transactions."
+      return "Вы успешно зарегистрировались, транзакция добавлена в ожидающие."
   }
 
   getAuthorized(login, password){

@@ -152,20 +152,14 @@ blockchain.get("/blockchain", retrieveBlockchain); //TODO: проверить а
 blockchain.get("/blockchain/resolve", resolveBlockchain);
 blockchain.get("/blockchain/print", printBlockchain);
 blockchain.get("/blockchain/length", lengthBlockchain);
-
 blockchain.get("/balances/:address", getBalance);
-
 blockchain.get("/events/blockchain/update", updateBlockchain);
-
 blockchain.post("/transactions", addTransaction);
-
 blockchain.post("/mine", mine);
 blockchain.post("/registration", createAccount);
 blockchain.post("/auth", getAuthorized);
 blockchain.post('/createDeal', authMiddleware, createDeal);
 blockchain.post('/checkDeal', checkDeal)
-// blockchain.get("/logout", logout)
-
 blockchain.route("/nodes")
     .post(registerNode)
     .get(retrieveNodes);
@@ -176,5 +170,5 @@ blockchain.route("/nodes")
 const instance = blockchain.listen(port, () => {
     codeCoin = new Blockchain(port);
     
-    console.log(`Node listening on port ${port}!`);
+    console.log(`Нода стартована на порту: ${port}!`);
 });

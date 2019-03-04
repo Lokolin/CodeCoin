@@ -1,7 +1,7 @@
 
 ## Running the Code
-1. To install all dependencies, `npm install`.
-2. As we want to run several instances (~nodes) of the code, we need to give a new `PORT` environment variable to each instance (~node). So, start the node with: `PORT=5000 npm start`.
-3. Other nodes can be added in the same way with a different port: `PORT=5001 npm start`.
-4. As gossiping (the addition of a new node) is not yet implemented, we have to register each node manually using Postman.
+1. Для установки всех зависимостей напишите `npm install`.
+2. Для запуска экземпляра узла надо прописать "PORT"". Для запуска ноды: `PORT=5000 npm start`.
+3. Другие ноды могут быть начаты на других портах. Например `PORT=5001 npm start`.
+4. Для установления новых свзяей между нодами надо вызвать `\node` и передать post-запросом ноду, через get-запрос можно узнать уже подключенные ноды..
 

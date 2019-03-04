@@ -15,10 +15,6 @@ class App extends React.Component {
         }
     }
 
-    // componentDidMount(): void {
-    //
-    // }
-
     toggleCase = () => {
         this.setState({
             loginForm: !this.state.loginForm,
@@ -106,7 +102,7 @@ class App extends React.Component {
             .then(r=> r.text())
             .then(x => {
                 console.log(x)
-                if (x !== "User already exist"){
+                if (x !== "Пользователь уже зарегистророван!"){
                     this.mine();
                     this.handleClick(`Вы зарегистированы, ${login}!`);
                 } else {
