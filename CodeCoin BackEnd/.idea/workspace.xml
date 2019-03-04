@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb2629c7-b198-4d04-8299-a43598284fe6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blockchain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blockchain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codecoin/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../codecoin/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../codecoin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../codecoin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codecoin/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../codecoin/src/App.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -163,12 +157,12 @@
       <workItem from="1550918832157" duration="707000" />
       <workItem from="1550920028132" duration="26109000" />
       <workItem from="1551696721619" duration="57000" />
-      <workItem from="1551697573896" duration="982000" />
+      <workItem from="1551697573896" duration="1171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37279000" />
+    <option name="totallyTimeSpent" value="37468000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

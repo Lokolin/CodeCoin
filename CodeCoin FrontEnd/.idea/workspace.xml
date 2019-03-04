@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="353746e3-04d9-4341-b1ba-34810da57f01" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../CodeCoin BackEnd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeCoin BackEnd/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodeCoin BackEnd/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeCoin BackEnd/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodeCoin BackEnd/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeCoin BackEnd/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodeCoin BackEnd/src/blockchain.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeCoin BackEnd/src/blockchain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="-21" />
               <second_editor />
             </state>
           </provider>
@@ -235,12 +229,12 @@
       <option name="presentableId" value="Default" />
       <updated>1550933812635</updated>
       <workItem from="1550933813976" duration="81230000" />
-      <workItem from="1551698148866" duration="409000" />
+      <workItem from="1551698148866" duration="600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81639000" />
+    <option name="totallyTimeSpent" value="81830000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -486,7 +480,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor relative-caret-position="-21" />
           <second_editor />
         </state>
       </provider>
