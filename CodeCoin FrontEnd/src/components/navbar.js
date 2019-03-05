@@ -22,7 +22,8 @@ const styles = {
 };
 
 function logout() {
-    localStorage.removeItem("login")
+    localStorage.removeItem("token");
+    window.location.reload();
 }
 
 function Navbar(props) {
@@ -37,7 +38,7 @@ function Navbar(props) {
                     <Typography variant="h6" color="inherit" className={classes.grow}>
                         CodeCoin
                     </Typography>
-                    {/*<Button color="inherit" onClick={logout()} >Выйти</Button>*/}
+                    <Button color="inherit" onClick={logout} >Выйти</Button>
                 </Toolbar>
             </AppBar>
         </div>

@@ -2,6 +2,7 @@ import React from "react";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import TextField from 'material-ui/TextField';
 import Button from "./balance";
+import RaisedButton from 'material-ui/RaisedButton';
 
 class ChekFile extends React.Component{
 
@@ -23,9 +24,10 @@ class ChekFile extends React.Component{
                         name="hash"
                         onChange = {(event,newValue) => this.setState({hash:newValue})}
                     />
-                    <br/>
-                    <Button variant="outlined" color="primary" type="submit" label="Проверить документ"
-                              primary={true} onClick={this.toggleCase}/>
+                    <RaisedButton variant="outlined" color="primary" type="submit" label="Проверить документ"
+                                  primary={true}/>
+                    {/*<Button variant="outlined" color="primary" type="submit" label="Проверить документ"*/}
+                              {/*primary={true}/>*/}
                 </form>
             </MuiThemeProvider>
         );

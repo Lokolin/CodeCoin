@@ -10,7 +10,7 @@ class App extends React.Component {
     constructor(props){
         super(props);
         this.state={
-            loginForm: !localStorage.getItem('login'),
+            loginForm: !localStorage.getItem('token'),
             otherElements: false,
         }
     }

@@ -119,12 +119,6 @@ const retrieveNodes = (req, res) => {
     res.json({nodes: codeCoin.retrieveNodes()});
 }
 
-const resolveBlockchain = (req, res) => {
-    findLongestBlockchain();
-    
-    res.json({message: "Успех!"});
-}
-
 const updateBlockchain = (req, res) => {
     findLongestBlockchain();
 
@@ -148,8 +142,7 @@ const createDeal = (req, res) => {
     res.json({message: "Успех!"});
 }
 
-blockchain.get("/blockchain", retrieveBlockchain); //TODO: проверить авторизациюы
-blockchain.get("/blockchain/resolve", resolveBlockchain);
+blockchain.get("/blockchain", retrieveBlockchain);
 blockchain.get("/blockchain/print", printBlockchain);
 blockchain.get("/blockchain/length", lengthBlockchain);
 blockchain.get("/balances/:address", getBalance);
