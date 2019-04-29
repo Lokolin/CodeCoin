@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import ExitIcon from '@material-ui/icons/ExitToApp';
 
 const styles = {
     root: {
@@ -38,7 +39,8 @@ function Navbar(props) {
                     <Typography variant="h6" color="inherit" className={classes.grow}>
                         CodeCoin
                     </Typography>
-                    <Button color="inherit" onClick={logout} >Выйти</Button>
+                    <div>Здравствуйте, {localStorage.getItem("login")} </div>
+                    <Button color="inherit" onClick={logout} > Выйти <ExitIcon className={classes.icon} style={{ fontSize: 17 }} /> </Button>
                 </Toolbar>
             </AppBar>
         </div>

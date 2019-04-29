@@ -14,7 +14,8 @@ class Transaction{
 }
 
 class Account{
-    constructor(hash){
+    constructor(login, hash){
+        this.login = login
         this.hash = hash;
     }
 }
@@ -93,19 +94,32 @@ class Blockchain {
   }
 
   createTransaction(transaction){
-      this.pendingTransactions.push(transaction);
+      let balance = this.getBalanceOfAddress(transaction.fromAddress);
+      let userExist = false;
+      for(const block of this.chain){
+          for(const trans of block.transactions){
+              if(trans.login === transaction.login){
+                  userExist = true;
+              }
+          }
+      }
+      if (balance >= transaction.amount && userExist){
+          this.pendingTransactions.push(transaction);
+      } else {
+          console.log("Ошибка при создании тразакции!")
+      }
   }
 
   createAccount(login, password){
       const hash =  SHA256(login + password).toString();
       for(const block of this.chain){
           for(const trans of block.transactions){
-              if(trans.hash === hash ){
+              if(trans.hash === hash || trans.login === login){
                   return "Пользователь уже зарегистророван!"
               }
           }
       }
-      this.pendingTransactions.push(new Account(hash))
+      this.pendingTransactions.push(new Account(login, hash))
       return "Вы успешно зарегистрировались, транзакция добавлена в ожидающие."
   }
 

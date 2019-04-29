@@ -134,6 +134,7 @@ class App extends React.Component {
             .then(r=> r.text())
             .then(x => {
                 console.log(x)
+                this.handleClick("Вы заработали 100 codecoin", "success");
                 this.handleClick(`Блок смайнен!`);
             });
     }
@@ -160,9 +161,32 @@ class App extends React.Component {
             });
     }
 
+    createTransaction = async (event) => {
+        event.preventDefault();
+        const toAddress = event.target.elements.toAddress.value;
+        const amount = event.target.elements.amount.value;
+        fetch('http://localhost:5000/transactions',{
+            method: "POST",
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+                "Authorization": localStorage.getItem('token'),
+            },
+            body:  JSON.stringify({
+                fromAddress: localStorage.getItem('login'),
+                toAddress: toAddress,
+                amount: Number(amount),
+            }),
+        })
+            .then(r=> r.text())
+            .then(x => {
+                console.log(x)
+            });
+    }
+
     checkHash = async (event) => {
         const hash = event;
-        this.handleClick(`Хеш от вашего документа добавлен в блок!`);
+        this.handleClickVariant("Hash-сумма от документа", "success")
         this.handleClickVariant(hash, "success")
 
     }
@@ -219,7 +243,8 @@ class App extends React.Component {
                                                 checkDeal={this.checkDeal}
                                                 update={this.updateChain}
                                                 checkHash={this.checkHash}
-                                                mine ={this.mine}/>: null}
+                                                mine ={this.mine}
+                                                createTransaction ={this.createTransaction}/>: null}
         </div>
       );
     }

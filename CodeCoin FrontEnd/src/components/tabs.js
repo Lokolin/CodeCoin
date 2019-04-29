@@ -13,7 +13,9 @@ import Balance from "./balance"
 import Chain from "./chain";
 import SimpleTable from "./table";
 import Grid from '@material-ui/core/Grid';
-import Mine from "./mine"
+import Mine from "./mine";
+import CreateTransaction from "./transaction";
+import Paper from '@material-ui/core/Paper';
 
 function TabContainer(props) {
     return (
@@ -81,14 +83,20 @@ class NavTabs extends React.Component {
                         <SimpleTable/>
                     </TabContainer>}
                     {value === 1 && <TabContainer>
-                        <CheckFile method={event => this.props.checkDeal(event)}/>
                         <Grid container spacing={8}>
-                            <Grid item xs={5}> </Grid>
-                            <Grid item xs={2}>
-                                Получить хеш-сумму от файла
-                                <UploadFile method={hash => this.props.checkHash(hash)}/>
+                            <Grid item xs={3}>
+                                <CheckFile method={event => this.props.checkDeal(event)}/>
                             </Grid>
-                            <Grid item xs={6}> </Grid>
+                            <Grid item xs={6}>
+                                <CreateTransaction method={event => this.props.createTransaction(event)}/>
+                            </Grid>
+                            <Grid item xs={3}>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <UploadFile method={hash => this.props.checkHash(hash)}/>
+                            </Grid>
                         </Grid>
                         </TabContainer>}
                     {value === 2 && <TabContainer>
